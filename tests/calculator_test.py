@@ -1,6 +1,6 @@
 """Testing the Calculator"""
 import pytest
-from calc.calculator import Calculator
+from calc.Calculator.calculator import Calculator
 from calc.history.calculations import Calculations
 from calc.calculations.addition import Addition
 from calc.calculations.multiplication import Multiplication
@@ -29,9 +29,9 @@ def test_calculator_subtract_static(clear_history_fixture):
     #testing the instance
     assert isinstance(calculation_result_object, Subtraction)
     #testing the last result of the calculation
-    assert Calculator.get_last_result_value() == -6.0
+    assert Calculator.get_last_result_value() == -4.0
     #testing that the result object performs the calculation
-    assert calculation_result_object.get_result() == -6.0
+    assert calculation_result_object.get_result() == -4.0
 
 def test_calculator_multiply_static(clear_history_fixture):
     """Testing the subtract method of the calc"""
