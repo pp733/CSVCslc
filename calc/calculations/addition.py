@@ -8,8 +8,4 @@ class Addition(Calculation):
         sum_of_values = 0.0
         for value in self.values:
             sum_of_values = value + sum_of_values
-<<<<<<< HEAD
         return sum_of_values
-=======
-        return sum_of_values
->>>>>>> origin/part5

@@ -6,7 +6,7 @@ from calc.calculations.division import Division
 class Calculations:
     """Calculations class manages the history of calculations"""
     history = []
-    # pylint: disable=too-few-public-methods
+
     @staticmethod
     def clear_history():
         """clear the history of calculations"""
